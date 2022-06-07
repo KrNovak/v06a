@@ -57,7 +57,7 @@ void main_window::on_command(int id){
 		}
 		case ID_COLOR:
 		{
-			COLORREF c[100] = { 0 };
+			static COLORREF c[100] = { 0 };
 			CHOOSECOLOR ch_color;
 			ZeroMemory(&ch_color, sizeof ch_color);
 			ch_color.rgbResult = color;
